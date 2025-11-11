@@ -1,5 +1,4 @@
 # Movie_Recommendation_System
-The sources provide extensive, detailed information about the design, implementation, and deployment of your project, the **Movie Recommendation System**.
 
 Below is a comprehensive structure and content for your GitHub `README.md` file, drawing on all the technical and conceptual details available in the excerpts.
 
@@ -82,7 +81,7 @@ This stage converts the textual features into a mathematical format (vectors) to
     *   **Cosine Similarity** was calculated between all 4806 movie vectors. Cosine distance is used because it is a reliable measure for similarity in high-dimensional spaces, unlike Euclidean distance.
     *   This resulted in a 4806x4806 similarity matrix, where each cell represents the similarity score (ranging from 0 to 1) between two movies.
 
-### Stage 3 & 4: Web Application and Deployment
+### Stage 3 : Web Application
 
 The final stage involves presenting the model to the user and deploying the app:
 
@@ -93,7 +92,7 @@ The final stage involves presenting the model to the user and deploying the app:
     *   **Sort** this row to identify the five most similar movies (highest similarity scores).
     *   Uses **API Integration** (via the `requests` library and the TMDB API) to fetch and display the associated **movie posters** along with the titles.
 2.  **Web Interface:** The application interface was developed using the **Streamlit** library.
-3.  **Deployment:** The application was deployed on **Heroku**. Deployment required specific configuration files (`Procfile`, `setup.sh`, `.gitignore`) and a refined `requirements.txt` listing only the primary dependencies (`streamlit`, `requests`, etc.).
+
 
 ***
 
@@ -104,4 +103,4 @@ The final application allows users to:
 2.  Click the "Recommend" button.
 3.  Receive a list of **five highly similar movies** based on content tags, displayed with their respective titles and posters.
 
-The result is a fully functional web app running on the server.
+The result is a fully functional web app.
