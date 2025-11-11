@@ -1,9 +1,3 @@
-# Movie_Recommendation_System
-
-Below is a comprehensive structure and content for your GitHub `README.md` file, drawing on all the technical and conceptual details available in the excerpts.
-
-***
-
 # Movie Recommendation System
 
 Repository: `kallemahendhar/Movie_Recommendation_System`
@@ -52,7 +46,16 @@ The core of the project is built using Python, leveraging the following key comp
 
 ## 🚀 End-to-End Project Flow
 
-The project execution is divided into four main stages:
+flowchart LR
+    A[Project Planning] --> B[Data Collection]
+    B --> C[Data Preprocessing]
+    C --> D[Feature Engineering]
+    D --> E[Model Building]
+    E --> F[Evaluation & Testing]
+    F --> G[Web Application Development]
+
+
+The project execution is divided into Three main stages:
 
 ### Stage 1: Data Preprocessing
 
@@ -94,6 +97,7 @@ The final stage involves presenting the model to the user and deploying the app:
 2.  **Web Interface:** The application interface was developed using the **Streamlit** library.
 
 
+
 ***
 
 ## 🌐 Features and Usage
@@ -102,5 +106,6 @@ The final application allows users to:
 1.  Select a movie from the complete list of 4806 movies.
 2.  Click the "Recommend" button.
 3.  Receive a list of **five highly similar movies** based on content tags, displayed with their respective titles and posters.
+
 
 The result is a fully functional web app.
